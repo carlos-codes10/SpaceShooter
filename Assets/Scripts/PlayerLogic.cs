@@ -3,7 +3,6 @@ using UnityEngine;
 public class PlayerLogic : MonoBehaviour
 {
     [SerializeField] float Speed = 12.0f;
-    int Seconds;
     private GameManager gameManager;
     [SerializeField] GameObject laserPrefab;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -11,8 +10,6 @@ public class PlayerLogic : MonoBehaviour
     {
         gameManager = FindAnyObjectByType<GameManager>();
     }
-
-
 
     public void Kill()
     {

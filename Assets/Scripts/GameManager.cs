@@ -8,7 +8,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject gameOverUI;
     private PlayerLogic Player;
     private EnemySpawner enemySpawner;
-    private Enemy Enemy;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -16,7 +15,6 @@ public class GameManager : MonoBehaviour
         scoreText.text = "SCORE: 0";
         Player = FindAnyObjectByType<PlayerLogic>();
         enemySpawner = FindAnyObjectByType<EnemySpawner>();
-        Enemy = FindAnyObjectByType<Enemy>();   
     }
 
     int Score;

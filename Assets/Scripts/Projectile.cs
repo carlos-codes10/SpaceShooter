@@ -10,7 +10,6 @@ public class Projectile : MonoBehaviour
     {
         gameManager = FindAnyObjectByType<GameManager>();
     }
-
     void Kill()
     {
         Destroy(gameObject);
